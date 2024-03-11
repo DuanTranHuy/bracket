@@ -12,7 +12,19 @@
   "author": "Huy Duan",
   "license": "MIT",
   "devDependencies": {
+    "@types/uuid": "^9.0.8",
     "tsup": "^8.0.2",
     "typescript": "^5.4.2"
+  },
+  "dependencies": {
+    "css-loader": "^6.10.0",
+    "i18next": "^21.6.14",
+    "i18next-browser-languagedetector": "^6.1.4",
+    "postcss": "^8.4.35",
+    "postcss-loader": "^8.1.1",
+    "rfdc": "^1.3.1",
+    "sass": "^1.71.1",
+    "sass-loader": "^14.1.1",
+    "uuid": "^9.0.1"
   }
 }

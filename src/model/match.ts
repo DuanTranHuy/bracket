@@ -52,6 +52,10 @@ export interface Match extends MatchResults {
   time: Date | null;
   // The label of the match.
   label: string | null;
+  // Next match for the winner.
+  nextWinnerMatchId: Id | null;
+  // Next match for the loser.
+  nextLoserMatchId: Id | null;
   /** The count of match games this match has. Can be `0` if it's a simple match, or a positive number for "Best Of" matches. */
   child_count: number;
 }
