@@ -1,5 +1,5 @@
 {
-  "name": "bracket",
+  "name": "bracket-tennis",
   "description": "Tourament Bracket",
   "version": "0.0.1",
   "main": "./dist/index.js",

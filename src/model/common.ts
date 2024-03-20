@@ -52,6 +52,7 @@ export type SeedOrdering =
   | "groups.seed_optimized"
   | "groups.bracket_optimized";
 
+export type BracketType = "playoff" | "elimination";
 /**
  * Depending on your storage system, you might prefer strings or numbers.
  */

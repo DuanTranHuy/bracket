@@ -1,4 +1,5 @@
 import {
+  BracketType,
   GrandFinalType,
   Id,
   RoundRobinMode,
@@ -46,6 +47,7 @@ export interface InputStage {
 
   /** Type of stage. */
   type: StageType;
+  bracketType: BracketType;
 
   /** The number of the stage in its tournament. Is determined if not given. */
   number?: number;
@@ -53,7 +55,6 @@ export interface InputStage {
   /** Contains participants or `null` for BYEs. */
   seeding?: Seeding;
   seedingIds?: IdSeeding;
-
   /** Contains optional settings specific to each stage type. */
   settings?: StageSettings;
 }
