@@ -1,5 +1,4 @@
 import {
-  BracketType,
   GrandFinalType,
   Id,
   RoundRobinMode,
@@ -41,14 +40,10 @@ export interface InputStage {
    * Used to determine the `number` property of a stage related to a tournament.
    */
   tournamentId: Id;
-
   /** Name of the stage. */
   name: string;
-
   /** Type of stage. */
   type: StageType;
-  bracketType: BracketType;
-
   /** The number of the stage in its tournament. Is determined if not given. */
   number?: number;
 

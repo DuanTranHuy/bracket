@@ -1,13 +1,17 @@
 {
   "name": "bracket-tennis",
   "description": "Tourament Bracket",
-  "version": "0.0.1",
+  "version": "0.0.3",
   "main": "./dist/index.js",
-  "module": "./dist/index.mjs",
   "types": "./dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "tsup"
+    "build": "tsup",
+    "prepare": "npm run build",
+    "prepublishOnly": "npm run build"
   },
   "author": "Huy Duan",
   "license": "MIT",

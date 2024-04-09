@@ -860,7 +860,9 @@ export class BracketsViewer {
 
     if (isMatch(match)) {
       if (!match.metadata.connection) return matchContainer;
-
+      if (match.opponent1 === null && match.opponent2 === null) {
+        matchContainer.style.visibility = "hidden";
+      }
       dom.setupConnection(opponents, matchContainer, match.metadata.connection);
     }
 
